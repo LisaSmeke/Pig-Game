@@ -12,17 +12,27 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Acme', sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  background-color: #fff;
+  /* background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%); */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.piggy {
+  width: 15%;
+}
+
 /* LAYOUT */
+.main-bg {
+  background-color: pink;
+  border-radius: 9px;
+}
+
 main {
   position: relative;
   width: 100rem;
