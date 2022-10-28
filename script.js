@@ -46,6 +46,7 @@ const switchPlayer = function () {
 btnRoll.addEventListener('click', function () {
   if (playing) {
     const dice = Math.trunc(Math.random() * 6) + 1;
+    console.log(dice);
     diceEl.classList.remove('hidden');
     diceEl.src = `Images/dice-${dice}.png`;
     if (dice !== 1) {
@@ -64,13 +65,13 @@ btnHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
   }
   //Check if player's score is >= 100
-  if (scores[activePlayer] >= 100) {
+  if (scores[activePlayer] >= 20) {
     //Finish the game
     playing = false;
     diceEl.classList.add('hidden');
     document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
     document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
-    document.getElementById(`name--${activePlayer}`).textContent = 'You win!';
+    document.getElementById(`name--${activePlayer}`).textContent = 'You win! 👏';
   } else {
     switchPlayer();
   }
