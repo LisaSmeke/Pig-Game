@@ -8,9 +8,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>Pig Dice Game</title>
+    <title>Pig - Dice Game</title>
   </head>
   <body>
+    <button class="show-modal">Game rules</button>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <div class="rules">
+        <h1>Pig Dice Game Rules</h1>
+        <ul>
+          <li>Player in turn rolls the die repeatedly (by clicking "ROLL DICE" button).</li>
+          <li>
+            The goal is to accumulate as many points as possible, adding up the numbers rolled on the
+            die. These will be displayed in the "CURRENT" box.
+          </li>
+          <li>
+            If a player rolls a 1, their turn is over and any points they have accumulated during this
+            turn are lost.
+          </li>
+          <li>
+            Rolling a 1 doesn't wipe out the player's entire score from previous turns, just the total
+            earned during that particular roll.
+          </li>
+          <li>Each player's score is displayed in white under the player's title.</li>
+          <li>
+            A player can also choose to hold (stop rolling the die, by clicking "HOLD" button) if they
+            do not want to take a chance of rolling a 1 and losing all of their points from their
+            current turn. If the player chooses to hold, all of the points rolled during that turn are
+            added to their score.
+          </li>
+          <li>
+            When a player reaches a total of 100 or more points, the game ends and that player is the
+            winner.
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
@@ -32,8 +67,9 @@
       <img src="Images/dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 Play again</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
-      <button class="btn btn--hold">🐷 Save</button>
+      <button class="btn btn--hold">🐷 Hold</button>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
