@@ -344,9 +344,9 @@ main {
 
 .close-modal {
   position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
+  top: 1%;
+  right: 3%;
+  font-size: 2.5rem;
   color: #252223;
   cursor: pointer;
   border: none;
@@ -354,22 +354,28 @@ main {
 }
 
 .rules h1 {
-  font-size: 2rem;
-  color: blue;
-  padding-top: 5%;
-  padding-left: 10%;
-  margin-bottom: 2%;
+  font-size: 1.5rem;
+  color: rgb(192, 25, 32);
+  margin-top: 3%;
+  padding-left: 5%;
+}
+
+.rules h2 {
+  margin-top: 1%;
+  font-size: 1.2rem;
+  padding-left: 5%;
 }
 
 ul {
   font-family: sans-serif;
-  font-size: 1rem;
-  list-style: circle;
-  padding: 10%;
-  padding-top: 1%;
+  font-size: 0.8rem;
+  list-style: square;
+  margin: 1% 5% 3% 7%;
+  /* padding: 5% 0;
+  padding-top: 1%; */
 }
 li {
-  padding: 1.5%;
+  padding: 1%;
 }
 
 /* CLASSES TO MAKE MODAL WORK */
